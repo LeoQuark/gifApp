@@ -2,6 +2,8 @@
     <h2 class="text-light py-4 text-center">giff app</h2>
     <hr class="text-light">
     <div class="list-group">
-        <a href="" class="list-group-item list-group-item-action">mm</a>
+        <a href="" class="list-group-item list-group-item-action" *ngFor="let item of historial">{{item |
+            titlecase}}</a>
+        <!-- titlecase capitaliza el valor, solo de forma visual -->
     </div>
 </div>

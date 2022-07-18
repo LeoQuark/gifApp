@@ -1,2 +1,3 @@
 <h2 class="p-0">Buscar</h2>
-<input type="text" class="form-control" placeholder="Buscar gif ...">
+<input type="text" class="form-control" placeholder="Buscar gif ..." (keyup.enter)="buscar(txtBuscar.value)" #txtBuscar>
+<!-- #txtBuscar es una referencia local del input para obtener su valor -->
